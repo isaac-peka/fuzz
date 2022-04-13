@@ -30,5 +30,3 @@ export PATH="$LLVM_BIN:$PATH"
 export LLVM_CONFIG="$LLVM_BIN/llvm-config"
 export LD_LIBRARY_PATH="$($LLVM_CONFIG --libdir)${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 '
-
-exit
