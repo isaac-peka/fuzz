@@ -1,7 +1,9 @@
 #!/bin/bash
 
 cd git
-CC=afl-cc CXX=acl-c++ make -j$(nproc)
-cd ../
+make configure
+CC=$(which afl-cc) CXX=$(which afl-c++) ./configure --disable-shared
+make all
 
-unzip packfiles.zip -d ./in
+cd ../
+unzip packfiles.zip -d in/
