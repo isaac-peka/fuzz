@@ -5,7 +5,7 @@ export PATH="/usr/lib/llvm-12/bin:$PATH"
 
 cd git
 make configure
-AR=llvm-ar RANLIB=llvm-randlib CC=afl-lto CXX=afl-lto++ ./configure --enable-lto --disable-shared --disable-inline-asm
+AR=llvm-ar RANLIB=llvm-randlib CC=afl-lto CXX=afl-lto++ ./configure
 make all
 
 cd ../
