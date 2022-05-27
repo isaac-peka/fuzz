@@ -9,9 +9,7 @@ sudo apt-get install -y build-essential python3-dev automake cmake git \
     libclang-common-12-dev libclang-cpp12 libclang-cpp12-dev liblld-12 \
     liblld-12-dev liblldb-12 liblldb-12-dev libllvm12 libomp-12-dev \
     libomp5-12 lld-12 lldb-12 llvm-12 llvm-12-dev llvm-12-runtime llvm-12-tools \
-    ninja-build
-
-sudo apt-get install gcc-$(gcc --version|head -n1|sed 's/\..*//'|sed 's/.* //')-plugin-dev \
+    ninja-build gcc-$(gcc --version|head -n1|sed 's/\..*//'|sed 's/.* //')-plugin-dev \
     libstdc++-$(gcc --version|head -n1|sed 's/\..*//'|sed 's/.* //')-dev
 
 # Git dependencies
@@ -21,6 +19,8 @@ sudo apt-get install cvs cvsps gettext libcgi-pm-perl libcurl4-gnutls-dev \
         libio-pty-perl libmailtools-perl libpcre2-dev libpcre3-dev libsvn-perl \
         perl-modules libyaml-perl libz-dev python subversion tcl unzip \
         asciidoc docbook-xsl xmlto libssl-dev zip
+
+sudo apt-get install -f -y
 
 echo '
 Remember to add when building AFLPlusPlus:

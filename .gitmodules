@@ -1,4 +1,0 @@
-[submodule "git"]
-	path = git
-	url = https://github.com/sp2ip/git.git
-	branch = fuzz
