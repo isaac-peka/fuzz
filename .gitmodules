@@ -1,0 +1,4 @@
+[submodule "ruby"]
+	path = ruby
+	url = https://github.com/isaac-peka/ruby.git
+	branch = fuzz_2_7_5
