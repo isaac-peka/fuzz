@@ -8,5 +8,5 @@ cd ruby
 autoconf
 mkdir build
 cd build
-AR=llvm-ar RANLIB=llvm-randlib CC=afl-lto CXX=afl-lto++ LD=afl-ld-lto ../configure
+AR=llvm-ar RANLIB=llvm-randlib CC=afl-lto CXX=afl-lto++ LD=afl-clang-lto ../configure
 make miniruby
