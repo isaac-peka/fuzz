@@ -2,7 +2,7 @@
 
 # AFL++ Dependencies
 
-sudo apt-get install -y build-essential python3-dev automake cmake git \ 
+sudo apt-get install -y build-essential python3-dev automake cmake git \
     flex bison libglib2.0-dev libpixman-1-dev python3-setuptools \
     clang-12 clang-tools-12 libc++1-12 libc++-12-dev \
     libc++abi1-12 libc++abi-12-dev libclang1-12 libclang-12-dev \
@@ -11,6 +11,10 @@ sudo apt-get install -y build-essential python3-dev automake cmake git \
     libomp5-12 lld-12 lldb-12 llvm-12 llvm-12-dev llvm-12-runtime llvm-12-tools \
     ninja-build gcc-$(gcc --version|head -n1|sed 's/\..*//'|sed 's/.* //')-plugin-dev \
     libstdc++-$(gcc --version|head -n1|sed 's/\..*//'|sed 's/.* //')-dev
+
+# Ruby dependencies
+
+sudo apt-get install -y autoconf bison gperf ruby
 
 sudo apt-get install -f -y
 
