@@ -12,14 +12,6 @@ sudo apt-get install -y build-essential python3-dev automake cmake git \
     ninja-build gcc-$(gcc --version|head -n1|sed 's/\..*//'|sed 's/.* //')-plugin-dev \
     libstdc++-$(gcc --version|head -n1|sed 's/\..*//'|sed 's/.* //')-dev
 
-# Git dependencies
-
-sudo apt-get install cvs cvsps gettext libcgi-pm-perl libcurl4-gnutls-dev \
-        libdbd-sqlite3-perl liberror-perl libexpat1-dev libhttp-date-perl \
-        libio-pty-perl libmailtools-perl libpcre2-dev libpcre3-dev libsvn-perl \
-        perl-modules libyaml-perl libz-dev python subversion tcl unzip \
-        asciidoc docbook-xsl xmlto libssl-dev zip
-
 sudo apt-get install -f -y
 
 echo '
